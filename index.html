@@ -20,150 +20,152 @@
                 <img src="./public/logo.png" alt="Image" style="width:75px; height: 75px">
             </a>
             <nav>
-                <a href="#">A propos</a>
-                <a href="#">Competences</a>
-                <a href="#">Projets</a>
-                <a href="#">Contact</a>
+                <a href="#about">A propos</a>
+                <a href="#competences">Compétences</a>
+                <a href="#projets">Projets</a>
+                <a href="#contacts">Contact</a>
             </nav>
         </div>
 
         <div>
-            <button id="translate">
+            <a href='english.html' class="translate">
                 <img src="./public/fr.png" alt="Drapeaux" style="width:50px">
-            </button>
-            <button class="CTA">Contacter</button>
+            </a>
         </div>
     </header>
     <main>
-        <section class="start">
+        <section class=" start">
             <h1>Mathéo D. - Développeur web <span class="colored">fullStack</span></h1>
-            <button class="CTA">Contacter</button>
+            <button class="CTA"><a href="mailto:matheo.deleplanque@gmail.com?subject=Contact depuis le portfolio"
+                    style="color:white;">Contacter</a></button>
             <img src="./public/illustration.jpg" alt="Illustration" class="illustration">
         </section>
-        <section class="introduction">
+        <section class="introduction" id="about">
             <div>
                 <img src="./public/memoji.png" alt="Image">
             </div>
             <div>
                 <h2>Un destin tout tracé !</h2>
-                <hr>
+                <hr align="left">
                 <br>
-                <p>Après un baccalauréat technologique (STI2D), je me suis dirigé vers un BUT Informatique spécialisé en
+                <p>Après un baccalauréat technologique (STI2D), je me suis dirigé vers un BUT Informatique
+                    spécialisé en
                     développement d’application pour pouvoir aiguiser mon niveau.
-                    <br>
-                    Mon ambition est d’intégrer une école d’ingénieur pour pouvoir aller encore plus loin et explorer de
+                    <br><br>
+                    Mon ambition est d’intégrer une école d’ingénieur pour pouvoir aller encore plus loin et
+                    explorer de
                     nouveaux horizons (avec l’intelligence artificielle notamment).
                 </p>
             </div>
         </section>
-        <section>
-            <h2>Qualites</h2>
-            <hr>
-            <div>
+        <section style="padding: 170px;">
+            <h2>Mes qualités</h2>
+            <hr align="left">
+            <div class="qualites">
                 <article class="qualite">
-                    <img src="./public/qualites/[].png" alt="Rigoureux">
+                    <img src="./public/qualites/rigoureux.png" alt="Rigoureux">
                     <h3>Rigoureux</h3>
                 </article>
                 <article class="qualite">
-                    <img src="./public/qualites/[].png" alt="Proactif">
+                    <img src="./public/qualites/proactif.png" alt="Proactif">
                     <h3>Proactif</h3>
                 </article>
                 <article class="qualite">
-                    <img src="./public/qualites/[].png" alt="Autonome">
+                    <img src="./public/qualites/autonome.png" alt="Autonome">
                     <h3>Autonome</h3>
                 </article>
             </div>
         </section>
-        <section>
-            <h2>Competences</h2>
+        <section style="padding: 170px;" id="competences">
+            <h2 style="text-align: center;">Compétences</h2>
             <hr>
             <div class="filtres">
                 <button class="filtre" id="languageFilter">Langages</button>
                 <button class="filtre" id="softwareFilter">Logiciels</button>
                 <button class="filtre" id="frameworkFilter">Frameworks</button>
             </div>
-            <div id='competences'>
+            <div class='competences'>
                 <article class="competence">
-                    <img src="./public/competences/[].png" alt="TypeScript">
+                    <img src="./public/competences/typescript.png" alt="TypeScript">
                     <h3>Typescript</h3>
                 </article>
                 <article class="competence">
-                    <img src="./public/competences/[].png" alt="Python">
+                    <img src="./public/competences/python.png" alt="Python">
                     <h3>Python</h3>
                 </article>
             </div>
         </section>
-        <section>
-            <h2>Mes projets</h2>
+        <section style="padding: 100px;" id="projets">
+            <h2 style="text-align: center;">Mes projets</h2>
             <hr>
             <div class="projets">
                 <div>
                     <article class="projet_format_1">
-                        <img src="./public/projets/[].png" alt="Subbwise">
+                        <img src="./public/projets/subbwise.png" alt="Subbwise">
                         <h3>Subbwise</h3>
-                        <div>
+                        <span style="display:flex; gap: 5px;">
                             <p>Typescript</p>
                             <p>NextJS</p>
                             <p>Supabase</p>
-                        </div>
+                        </span>
                     </article>
                     <article class="projet_format_2">
-                        <img src="./public/projets/[].png" alt="Bomberman">
+                        <img src="./public/projets/bomberman.png" alt="Bomberman">
                         <h3>Bomberman</h3>
-                        <div>
+                        <span style="display:flex; gap: 5px;">
                             <p>JavaFx</p>
-                        </div>
+                        </span>
                     </article>
                 </div>
                 <div>
                     <article class="projet_format_1">
-                        <img src="./public/projets/[].png" alt="MamyLens">
+                        <img src="./public/projets/mamylens.png" alt="MamyLens">
                         <h3>MamyLens</h3>
-                        <div>
+                        <span style="display:flex; gap: 5px;">
                             <p>Laravel</p>
                             <p>TailwindCss</p>
                             <p>Vite</p>
-                        </div>
+                        </span>
                     </article>
                     <article class="projet_format_4">
-                        <img src="./public/projets/[].png" alt="Cashalize">
+                        <img src="./public/projets/cashalize.png" alt="Cashalize">
                         <h3>Cashalize</h3>
                     </article>
                     <article class="projet_format_4">
-                        <img src="./public/projets/[].png" alt="Flatcraft">
+                        <img src="./public/projets/flatcraft.jpg" alt="Flatcraft">
                         <h3>Flatcraft</h3>
                     </article>
                 </div>
                 <div>
                     <article class="projet_format_2">
-                        <img src="./public/projets/[].png" alt="LaTierra">
+                        <img src="./public/projets/latierra.png" alt="LaTierra">
                         <h3>LaTierra</h3>
-                        <div>
+                        <span style="display:flex; gap: 5px;">
                             <p>Laravel</p>
                             <p>Vite</p>
-                        </div>
+                        </span>
                     </article>
                     <article class="projet_format_3">
-                        <img src="./public/projets/[].png" alt="Chatting App">
+                        <img src="./public/projets/chattingapp.png" alt="Chatting App">
                         <h3>Chatting App</h3>
-                        <div>
+                        <span style="display:flex; gap: 5px;">
                             <p>JavaScript</p>
                             <p>ReactJS</p>
-                        </div>
+                        </span>
                     </article>
                     <article class="projet_format_3">
-                        <img src="./public/projets/[].png" alt="Just Prime">
+                        <img src="./public/projets/justprime.jpg" alt="Just Prime">
                         <h3>Just Prime</h3>
-                        <div>
+                        <span style="display: flex; gap: 5px;">
                             <p>Flask</p>
                             <p>Python</p>
-                        </div>
+                        </span>
                     </article>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="contacts">
         <a href="https://github.com/matheokcx">
             <img src="./public/contacts/github.png" alt="Github">
         </a>
