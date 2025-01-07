@@ -41,7 +41,7 @@ function updateCompetences(filterType) {
     const items = competences[filterType] || [];
     items.forEach(item => {
         const article = document.createElement("article");
-        article.className = "w-10/12 md:w-1/6 bg-white rounded-3xl shadow-lg py-2";
+        article.className = "w-10/12 md:w-1/6 bg-white rounded-3xl shadow-lg transition-all py-2 hover:shadow-xl";
 
         const img = document.createElement("img");
         img.src = item.img;

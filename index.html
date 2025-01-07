@@ -30,7 +30,7 @@
         </div>
 
         <div class="flex items-center gap-8">
-            <a href="/cv.pdf" download="cv_deleplanque_matheo.pdf">
+            <a href="./public/cv.pdf" target="_blank">
                 <img src="./public/cv.svg" alt="Drapeaux" class="w-10">
             </a>
             <a href="english.html">
@@ -46,37 +46,38 @@
             <button
                 class="w-1/3 md:w-1/12 h-12 rounded-3xl text-white font-bold bg-gradient-to-br from-[#3C1AFB] to-[#311F71] transition-all hover:-translate-y-2 hover:scale-105"><a
                     href="mailto:matheo.deleplanque@gmail.com?subject=Contact par portfolio">Contacter</a></button>
-            <img src="./public/illustration.jpg" alt="Illustration" class="w-10/12 md:w-1/2 rounded-3xl e_slideright">
+            <img src="./public/illustration.jpg" alt="Illustration" class="w-10/12 md:w-3/4 rounded-3xl e_slideright">
         </section>
         <section class="w-full mb-12 md:p-44 flex flex-col-reverse md:flex-row items-center gap-10 md:gap-72"
             id="about">
-            <img src="./public/memoji.png" alt="Image" class="w-10/12 md:w-auto">
-            <div>
+            <img src="./public/memoji.png" alt="Image" class="w-10/12 md:w-2/5">
+            <div class="w-3/5">
                 <h2 class="text-3xl font-bold">Un destin tout tracé !</h2>
                 <br>
                 <p>Après avoir obtenu mon baccalauréat technologique (STI2D), j'ai choisi de poursuivre mes études avec
-                    un BUT Informatique, me spécialisant dans le développement d'applications. Cette formation m'a
-                    permis de renforcer mes compétences techniques et de nourrir ma passion pour la création de
+                    un BUT Informatique spécialisé dans le développement d'applications. Cette formation me
+                    permet de renforcer mes compétences techniques et de nourrir ma passion pour la création de
                     solutions numériques innovantes.
                     <br><br>
-                    Mon objectif est clair : intégrer une école d'ingénieurs pour repousser mes limites et explorer des
-                    domaines d'avenir, notamment l'intelligence artificielle. Je suis déterminé à combiner ma curiosité,
-                    mon expertise et mon ambition pour relever les défis technologiques de demain.
+                    Mon objectif est clair : intégrer une école d'ingénieurs pour pouvoir repousser mes limites et
+                    explorer des
+                    domaines d'avenir, comme l'intelligence artificielle. Je suis déterminé à relever les défis
+                    technologiques de demain.
                 </p>
             </div>
         </section>
         <section class="w-full mb-12 md:p-44 grid gap-10">
             <h2 class="text-3xl text-center md:text-left font-bold">Qualités</h2>
             <div class="w-full flex flex-col md:flex-row items-center gap-10 md:gap-48">
-                <article class="w-full md:w-1/3 md:h-[300px] md:h-[500px] bg-white shadow-lg rounded-2xl text-black">
+                <article class="w-full md:w-1/3 md:h-[350px] bg-white shadow-lg rounded-2xl text-black">
                     <img src="./public/qualites/rigoureux.png" alt="Rigoureux" class="w-full h-3/4 rounded-2xl">
                     <h3 class="mt-8 text-xl font-semibold text-center">Rigoureux</h3>
                 </article>
-                <article class="w-full md:w-1/3 md:h-[300px] md:h-[500px] bg-white shadow-lg rounded-2xl text-black">
+                <article class="w-full md:w-1/3 md:h-[350px] bg-white shadow-lg rounded-2xl text-black">
                     <img src="./public/qualites/proactif.png" alt="Proactif" class="w-full h-3/4 rounded-2xl ">
                     <h3 class="mt-8 text-xl font-semibold text-center">Proactif</h3>
                 </article>
-                <article class="w-full md:w-1/3 md:h-[300px] md:h-[500px] bg-white shadow-lg rounded-2xl text-black">
+                <article class="w-full md:w-1/3 md:h-[350px] bg-white shadow-lg rounded-2xl text-black">
                     <img src="./public/qualites/autonome.png" alt="Autonome" class="w-full h-3/4 rounded-2xl">
                     <h3 class="mt-8 text-xl font-semibold text-center">Autonome</h3>
                 </article>
@@ -132,12 +133,14 @@
         </section>
         <section class="w-full mb-12 md:p-44 grid gap-20 text-black" id="projets">
             <h2 class="text-3xl text-center font-bold text-black dark:text-white">Mes projets</h2>
-            <div class="w-full h-fit md:h-[850px] flex flex-col md:flex-row gap-20 md:gap-10">
+            <div class="w-full h-fit md:h-[600px] flex flex-col md:flex-row gap-20 md:gap-10">
                 <div class="w-full md:w-1/3 h-fit md:h-full flex flex-wrap gap-10">
                     <article class="w-full h-3/4 p-2 bg-white rounded-3xl shadow-lg">
                         <img src="./public/projets/subbwise.png" alt="Subbwise"
-                            class="w-full h-3/4 rounded-3xl blur-sm">
-                        <h3 class="mt-4 ml-4 text-xl font-semibold">Subbwise</h3>
+                            class="w-full h-3/5 rounded-3xl blur-sm">
+                        <h3 class="mt-4 ml-4 text-xl font-semibold"><a
+                                href="https://github.com/matheokcx/subb-wise">Subbwise</a>
+                        </h3>
                         <div class="mt-4 ml-4 flex gap-4 items-center">
                             <p class="px-4 py-1 border-2 border-blue-600 text-blue-600 rounded-2xl">Typescript</p>
                             <p class="px-4 py-1 border-2 border-black text-black rounded-2xl">NextJS</p>
@@ -146,10 +149,11 @@
                     </article>
                     <article class="w-full h-1/4 p-2 bg-white rounded-3xl shadow-lg">
                         <img src="./public/projets/bomberman.png" alt="Bomberman"
-                            class="w-full h-3/4 rounded-3xl blur-sm">
+                            class="w-full h-3/5 rounded-3xl blur-sm">
 
                         <div class="mr-4 flex gap-4 justify-between items-baseline">
-                            <h3 class="mt-4 ml-4 text-xl font-semibold">Bomberman</h3>
+                            <h3 class="mt-4 ml-4 text-xl font-semibold"><a
+                                    href="https://github.com/matheokcx/bomberman">Bomberman</a></h3>
                             <p class="px-4 py-1 border-2 border-orange-400 text-orange-400 rounded-2xl">JavaFx</p>
                         </div>
                     </article>
@@ -157,49 +161,58 @@
                 <div class="w-full md:w-1/3 h-fit md:h-full flex flex-wrap gap-10">
                     <article class="w-full h-3/4 p-2 bg-white rounded-3xl shadow-lg">
                         <img src="./public/projets/mamylens.png" alt="MamyLens"
-                            class="w-full h-3/4 rounded-3xl blur-sm">
-                        <h3 class="mt-4 ml-4 text-xl font-semibold">MamyLens</h3>
+                            class="w-full h-3/5 rounded-3xl blur-sm">
+                        <h3 class="mt-4 ml-4 text-xl font-semibold"><a
+                                href="https://github.com/matheokcx/mamylens">MamyLens</a>
+                        </h3>
                         <div class="mt-4 ml-4 flex gap-4 items-center">
                             <p class="px-4 py-1 border-2 border-red-400 text-red-400 rounded-2xl">Laravel</p>
                             <p class="px-4 py-1 border-2 border-blue-400 text-blue-400 rounded-2xl">TailwindCss</p>
                             <p class="px-4 py-1 border-2 border-purple-400 text-purple-400 rounded-2xl">Vite</p>
                         </div>
                     </article>
-                    <article class="w-5/12 h-1/4 p-2 bg-white rounded-3xl shadow-lg">
+                    <article class="w-[44%] h-1/4 p-2 bg-white rounded-3xl shadow-lg">
                         <img src="./public/projets/cashalize.png" alt="Cashalize"
-                            class="w-full h-3/4 rounded-3xl blur-sm">
-                        <h3 class="mt-4 ml-4 text-xl font-semibold">Cashalize</h3>
+                            class="w-full h-3/5 rounded-3xl blur-sm">
+                        <h3 class="mt-4 ml-4 text-xl font-semibold"><a
+                                href="https://github.com/matheokcx/cashalize">Cashalize</a></h3>
                     </article>
-                    <article class="w-5/12 h-1/4 p-2 bg-white rounded-3xl shadow-lg">
+                    <article class="w-[44%] h-1/4 p-2 bg-white rounded-3xl shadow-lg">
                         <img src="./public/projets/flatcraft.jpg" alt="Flatcraft"
-                            class="w-full h-3/4 rounded-3xl blur-sm">
-                        <h3 class="mt-4 ml-4 text-xl font-semibold">Flatcraft</h3>
+                            class="w-full h-3/5 rounded-3xl blur-sm">
+                        <h3 class="mt-4 ml-4 text-xl font-semibold"><a
+                                href="https://github.com/matheokcx/flatcraft">Flatcraft</a></h3>
                     </article>
                 </div>
                 <div class="w-full md:w-1/3 h-fit md:h-full flex flex-wrap gap-10">
                     <article class="w-full h-1/4 p-2 bg-white rounded-3xl shadow-lg">
                         <img src="./public/projets/latierra.png" alt="LaTierra"
-                            class="w-full h-3/4 rounded-3xl blur-sm">
+                            class="w-full h-3/5 rounded-3xl blur-sm">
 
                         <div class="mr-4 flex gap-4 justify-between items-baseline">
-                            <h3 class="mt-4 ml-4 text-xl font-semibold">LaTierra</h3>
+                            <h3 class="mt-4 ml-4 text-xl font-semibold"><a
+                                    href="https://github.com/matheokcx/la-tierra">LaTierra</a></h3>
                             <p class="px-4 py-1 border-2 border-red-400 text-red-400 rounded-2xl">Laravel</p>
                             <p class="px-4 py-1 border-2 border-purple-400 text-purple-400 rounded-2xl">Vite</p>
                         </div>
                     </article>
-                    <article class="w-5/12 h-3/4 p-2 bg-white rounded-3xl shadow-lg">
+                    <article class="w-[44%] h-3/4 p-2 bg-white rounded-3xl shadow-lg">
                         <img src="./public/projets/chattingapp.png" alt="Chatting App"
-                            class="w-full h-3/4 rounded-3xl blur-sm">
-                        <h3 class="mt-4 ml-4 text-xl font-semibold">Chatting App</h3>
+                            class="w-full h-3/5 rounded-3xl blur-sm">
+                        <h3 class="mt-4 ml-4 text-xl font-semibold"><a
+                                href="https://github.com/matheokcx/chatting_app">Chatting</a>
+                            App</h3>
                         <div class="mt-4 ml-4 flex flex-wrap gap-4 items-center">
                             <p class="px-4 py-1 border-2 border-yellow-300 text-yellow-300 rounded-2xl">JavaScript</p>
                             <p class="px-4 py-1 border-2 border-blue-300 text-blue-300 rounded-2xl">ReactJS</p>
                         </div>
                     </article>
-                    <article class="w-5/12 h-3/4 p-2 bg-white rounded-3xl shadow-lg">
+                    <article class="w-[44%] h-3/4 p-2 bg-white rounded-3xl shadow-lg">
                         <img src="./public/projets/justprime.jpg" alt="Just Prime"
-                            class="w-full h-3/4 rounded-3xl blur-sm">
-                        <h3 class="mt-4 ml-4 text-xl font-semibold">Just Prime</h3>
+                            class="w-full h-3/5 rounded-3xl blur-sm">
+                        <h3 class="mt-4 ml-4 text-xl font-semibold"><a
+                                href="https://github.com/matheokcx/just-prime">Just
+                                Prime</a></h3>
                         <div class="mt-4 ml-4 flex flex-wrap gap-4 items-center">
                             <p class="px-4 py-1 border-2 border-gray-300 text-gray-300 rounded-2xl">Flask</p>
                             <p class="px-4 py-1 border-2 border-yellow-500 text-yellow-500 rounded-2xl">Python</p>
